@@ -1,0 +1,5 @@
+
+Quantity: 15    |    Total Price with tax: 42.0 SR
+Quantity: 20    |    Total Price with tax: 48.0 SR
+Quantity: 20    |    Total Price with tax: 48.0 SR
+Quantity: 15    |    Total Price with tax: 42.0 SR

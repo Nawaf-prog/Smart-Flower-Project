@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_prog.PACKAGEController">
+   <children>
+      <ImageView fx:id="IMG_1" fitHeight="418.0" fitWidth="610.0" layoutX="-9.0" layoutY="-7.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PACK_IMG.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_bouquet" layoutX="18.0" layoutY="7.0" prefHeight="83.0" prefWidth="491.0" text="BOUQUETS OF ROSES :" textFill="LIGHTSALMON">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="37.0" />
+         </font>
+      </Label>
+      <Line fx:id="line1" endX="179.0" layoutX="408.0" layoutY="10.0" startX="-393.0" stroke="#f2b9b9" />
+      <RadioButton fx:id="rad1" layoutX="13.0" layoutY="79.0" mnemonicParsing="false" selected="true" text="10 FLOWERS ➡ 25 SR." textFill="LIGHTCORAL">
+         <toggleGroup>
+            <ToggleGroup fx:id="PACKAGE_RAD" />
+         </toggleGroup>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rad2" layoutX="13.0" layoutY="103.0" mnemonicParsing="false" text="15 FLOWERS ➡ 35 SR." textFill="LIGHTCORAL" toggleGroup="$PACKAGE_RAD">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rad4" layoutX="13.0" layoutY="152.0" mnemonicParsing="false" text="25 FLOWERS ➡ 50 SR." textFill="LIGHTCORAL" toggleGroup="$PACKAGE_RAD">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rad3" layoutX="13.0" layoutY="127.0" mnemonicParsing="false" text="20 FLOWERS ➡ 40 SR." textFill="LIGHTCORAL" toggleGroup="$PACKAGE_RAD">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <Line fx:id="line3" endX="-225.0" layoutX="409.0" layoutY="178.0" startX="-393.0" stroke="#f2b9b9" strokeWidth="4.0" />
+      <Line fx:id="line4" endX="-393.0" endY="-95.0" layoutX="578.0" layoutY="177.0" startX="-393.0" stroke="#f2b9b9" strokeWidth="4.0" />
+      <ComboBox fx:id="comb1" layoutX="201.0" layoutY="85.0" prefHeight="25.0" prefWidth="100.0" promptText="CHOOSE .. " />
+      <ComboBox fx:id="comb2" layoutX="201.0" layoutY="138.0" prefHeight="25.0" prefWidth="100.0" promptText="CHOOSE .. " />
+      <TextArea fx:id="txt_area" layoutX="14.0" layoutY="218.0" prefHeight="111.0" prefWidth="200.0" promptText="Type ..." style="-fx-background-color: black;" wrapText="true" />
+      <Label fx:id="lbl_comments" layoutX="16.0" layoutY="187.0" prefHeight="41.0" prefWidth="207.0" text="ADDITIONAL COMMENTS :" textFill="LIGHTSALMON">
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_type" layoutX="198.0" layoutY="101.0" prefHeight="41.0" prefWidth="106.0" text="TYPE OF ROSES :" textFill="LIGHTSALMON">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_color" layoutX="202.0" layoutY="56.0" prefHeight="41.0" prefWidth="106.0" text="COLOR OF ROSES :" textFill="LIGHTSALMON">
+         <font>
+            <Font name="Times New Roman Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_check" layoutX="74.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnOrderDet" text="CheckOut" />
+   </children>
+</AnchorPane>

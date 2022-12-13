@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="an" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx_prog.Pick_upController">
+   <children>
+      <ImageView fitHeight="357.0" fitWidth="607.0" layoutX="-3.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PHOTO_Y.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_cus" layoutX="11.0" layoutY="4.0" prefHeight="51.0" prefWidth="319.0" text="CUSTOMER  INFORMATION:" textFill="GOLDENROD">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_name" layoutX="78.0" layoutY="51.0" promptText="NAWAF MOHAMMED" />
+      <Label fx:id="lbl_name" layoutX="25.0" layoutY="55.0" text="NAME :" textFill="KHAKI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_phone" layoutX="24.0" layoutY="87.0" text="PHONE :" textFill="KHAKI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf_phone" layoutX="78.0" layoutY="83.0" promptText="05********" />
+      <TextField fx:id="tf_email" layoutX="78.0" layoutY="117.0" promptText="******@gmail.com" />
+      <Label fx:id="lbl_email" layoutX="26.0" layoutY="121.0" text="EMAIL :" textFill="KHAKI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line fx:id="line" endX="100.0" layoutX="348.0" layoutY="165.0" startX="-167.0" stroke="KHAKI" />
+      <Label fx:id="lbl_del" layoutX="3.0" layoutY="155.0" prefHeight="17.0" prefWidth="179.0" text="PICK UP   INFORMATION:" textFill="GOLDENROD">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="70.0" prefHeight="119.0" prefWidth="89.0" text="💁" textFill="GOLDENROD">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="74.0" prefHeight="77.0" prefWidth="89.0" text="📦" textFill="GOLDENROD">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="253.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnBack" text="Back" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <tooltip>
+            <Tooltip fx:id="tool_back" text="Back to previous page" />
+         </tooltip>
+      </Button>
+      <Button fx:id="btnNext" layoutX="307.0" layoutY="301.0" mnemonicParsing="false" onAction="#txt_excep" text="Next" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_work" layoutX="15.0" layoutY="181.0" text="WORKING HOURS :" textFill="KHAKI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_hours" layoutX="245.0" layoutY="182.0" prefWidth="146.0" text="from 4 PM until 11 PM" textFill="GOLDENROD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_days" layoutX="132.0" layoutY="181.0" prefWidth="146.0" text="Sunday - Thursday," textFill="GOLDENROD">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comb_branch" layoutX="220.0" layoutY="217.0" prefHeight="25.0" prefWidth="146.0" promptText="BRANCHES ..." style="-fx-border-color: CORNSILK;" />
+      <ListView fx:id="list_times" editable="true" layoutX="27.0" layoutY="227.0" prefHeight="69.0" prefWidth="133.0" style="-fx-border-color: CORNSILK;" />
+      <Label fx:id="lbl_att_time" layoutX="15.0" layoutY="197.0" prefHeight="36.0" prefWidth="192.0" text="ESTIMATED ATTENDANCE TIME :" textFill="KHAKI">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
